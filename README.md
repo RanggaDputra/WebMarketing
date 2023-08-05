@@ -1,63 +1,65 @@
-# CodeIgniter 4 Application Starter
+## Table of contents
+* [Description](#description)
+* [Feature](#feature)
+* [Build With](#build-with)
+* [Setup](#setup)
+* [License](#license)
+* [Author](#author)
 
-## What is CodeIgniter?
+## Description
+Web Marketing pemesana indihome merupakan aplikasi sederhana pemesanan. mirip seperti pemesanan pada umumnya, namun lebih praktis karena dilakukan secara virtual melalui aplikasi kami secara online. dibuat menggunakan HTML, PHP, JQUERY, serta database menggunakan MySql
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+## Feature
+Aplikasi Auksien Online mempunyai beberapa fitur yaitu :
+* Account Management : Register dan Login (Password encrypted using md5)
+* Home : daftar item paket yang ditawarkan
+* Add : menambahkan paket untuk dipesan
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+	
+## Build With
+aplikasi ini dibuat menggunakan : 
+* PHP :  7.3.1
+* MySql : 10.1.37-MariaDB
+* Jquery : 2.1.4
+* Html Backend Conquer Template 
+	
+## Setup 
+Untuk saat ini masih belum bisa diakses karena databasenya sudah hilang jadi kami ingin membuat ulang databsenya
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+```
+1. Import Database
+2. ganti setting username dan password database di tiap file
+3. download file atau clone repository di dalam file xampp/htdocs/
+```
 
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+List Akun dan Pass :
+```
+1. 
 
-## Installation & updates
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+## License
+MIT License
 
-## Setup
+Copyright (c) 2020 ShinCorp
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Important Change with index.php
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use Github issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.3 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
+## Author
+ShinCorp
